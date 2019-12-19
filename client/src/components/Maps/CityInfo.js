@@ -87,13 +87,8 @@ class CityInfo extends Component {
       totalCost: this.totalCost.value,
     };
     axios
-      .post(`/api/charger`, charger, {
-        headers: {
-          "x-auth-token": localStorage.getItem("x-auth-token"),
-        },
-      })
-      .then(res => console.log(res))
-      .then((document.location = "/dashboard"));
+      .post(`/api/charger/${localStorage.uID}`, charger)
+      .then(res => console.log(res));
   };
 
   handleChange = e => {

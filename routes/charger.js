@@ -23,12 +23,15 @@ router.post("/:userId", async (req, res) => {
   const { error } = chargerSchemaValidator(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
+  const user = await User.findOne({
+    _id: req.params.userId
+  });
+
   const payload = {
     ...req.body,
-    user: req.params.userId,
+    user: user._id,
   };
   charger = new Charger(payload);
-  const user = await User.findById(req.params.id);
   const userCharger = user.charger;
   userCharger.push(charger.id);
   await charger.save();

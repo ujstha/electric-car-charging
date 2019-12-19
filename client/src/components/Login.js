@@ -78,6 +78,7 @@ class Login extends Component {
     axios
       .post(`/api/login`, user)
       .then(res => {
+        localStorage.setItem("uID", res.data.id);
         localStorage.setItem("x-auth-token", res.data.token);
         if (res.data.token) {
           document.location = "/dashboard";
