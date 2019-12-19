@@ -1,0 +1,26 @@
+id,zip_code,street_name,building_id,city_name,lat,long,name,googlemap_url
+1,90100,Hallituskatu,1,Oulu,65.01224,25.47666,Virta Global Charging Station,https://maps.google.com/?cid=12331691249258294898
+2,90100,Kasarmintie,6,Oulu,65.01756,25.482,Virta Global Charging Station,https://maps.google.com/?cid=1671424751255242150
+3,90410,Pauketie,4,Oulu,64.96293,25.51151,Delta Auto Oulu Charging Station,https://maps.google.com/?cid=12211424865528511018
+4,01200,Porttisuontie,18,Vantaa,60.27675,25.08482,IKEA Vantaa Charging Station,https://maps.google.com/?cid=2455520543729764523
+5,02420,Hirsalantie,215,Kirkkonummi,60.11845,24.52313,Tesla Destination Charger,https://maps.google.com/?cid=8294480913090977673
+6,90100,Kirkkokatu,3,Oulu,65.01534,25.47599,Tesla Destination Charger,https://maps.google.com/?cid=1037911797958042759
+7,90100,Saaristonkatu,4,Oulu,65.01177,25.4655,Virta Global Charging Station,https://maps.google.com/?cid=11516270734556724020
+8,90540,Ritaharjuntie,49,Oulu,65.07588,25.44618,Virta Global Charging Station,https://maps.google.com/?cid=10706144430424602642
+9,90410,Lentokentäntie,720,Oulu,64.93022,25.37464,Finaviaj Charging Station,https://maps.google.com/?cid=173110278670687929
+10,90460,lentokatu Oulunsalo Keskus,2,Oulu,64.93118,25.38545,Nobil Charging Station,https://maps.google.com/?cid=12186637306560655245
+11,90400,Nuottasaarentie,1,Oulu,64.99568,25.46224,Nobil Charging Station,https://maps.google.com/?cid=18213221933375631571
+12,90400,Tyrnäväntie,7,Oulu,64.99684,25.45798,Nobil Charging Station,https://maps.google.com/?cid=10057780786748489018
+13,90100,Kirkkokatu,14,Oulu,65.01134,25.46974,Nobil Charging Station,https://maps.google.com/?cid=1727611314987849424
+14,90420,Metsokankaantie,5,Mäntylä,64.95632,25.52322,Ruokakeskusj Charging Station,https://maps.google.com/?cid=1562971156003899339
+15,90840,Asemakyläntie,5,Asemanseutu,65.19391,25.41201,OSAO Haukipudas Charging Station,https://maps.google.com/?cid=17903233511432840412
+16,91100,Piisilta,1,Keskus,65.28825,25.3753,Iilaakso Charging Station,https://maps.google.com/?cid=17755293312788803727
+17,02100,Leppävaarantie,1,Espoo,60.21799,24.81262,Nobil Charging Station,https://maps.google.com/?cid=5026254156149650900
+18,00520,Elimäenkatu,15,Helsinki,60.19477,24.94846,Q-Park Finland Charging Station,https://maps.google.com/?cid=7332080675600077390
+19,02270,Isonniitynkuja,2,Espoo,60.16341,24.70812,Ruokakesko Charging Station,https://maps.google.com/?cid=13174799795193649504
+20,06150,Kipinätie,1,Porvoo,60.39585,25.70036,Nobil Charging Station,https://maps.google.com/?cid=13727433141701565458
+
+
+
+
+

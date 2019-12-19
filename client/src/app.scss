@@ -1,0 +1,117 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  color: black;
+  overflow: hidden;
+  font-family: "Raleway", sans-serif;
+}
+
+.loading {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  // background-color: red;
+  border-radius: 50%;
+  border-top: 3px solid #888;
+  border-bottom: 3px solid #888;
+  border-right: 3px solid transparent;
+  border-left: 3px solid transparent;
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.btns {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 10px;
+  right: 10px;
+}
+
+.btn {
+  margin: 5px 0;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 10px #000;
+  color: #333;
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  overflow: hidden;
+  cursor: pointer;
+  animation: expand-out 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes expand-out {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+input,
+button,
+label {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.spinner {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-bottom: -5px;
+  border-radius: 50%;
+  // box-sizing: border-box;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
+  animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
