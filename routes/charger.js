@@ -19,16 +19,16 @@ router.get("/:id", auth, async (req, res) => {
   res.status(200).send(charger);
 });
 
-router.post("/", auth, async (req, res) => {
+router.post("/:userId", async (req, res) => {
   const { error } = chargerSchemaValidator(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
   const payload = {
     ...req.body,
-    user: req.user.id,
+    user: req.params.userId,
   };
   charger = new Charger(payload);
-  const user = await User.findById(req.user.id);
+  const user = await User.findById(req.params.id);
   const userCharger = user.charger;
   userCharger.push(charger.id);
   await charger.save();
