@@ -1,4 +1,4 @@
-// require("dotenv").config();
+require("dotenv").config();
 const mongoose = require("mongoose");
 mongoose.set("useNewUrlParser", true);
 mongoose.set("useFindAndModify", false);
@@ -8,7 +8,7 @@ mongoose.set("useUnifiedTopology", true);
 const dbConnection = () => {
   mongoose
     .connect(
-      /*process.env.DB_URI*/ "mongodb://Shubhashish:e1ectriccar@ds155934.mlab.com:55934/e-car",
+      process.env.MONGODB_URI,
       { useNewUrlParser: true }
     )
     .then(() => {
